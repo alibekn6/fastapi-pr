@@ -19,11 +19,9 @@ process_items_pydantic(itemlist1)
 
 
 # other weak variant (typing)
-def process_items_weak(item_list: List[str]):
+def process_items_weak(item_list: List[int]):
     for item in item_list:
-        if isinstance(item, str):
-            print(item)
-        raise ValueError("Passed not string")
+        print(item)
 
 
 itemlist1 = [12, "wed"]
